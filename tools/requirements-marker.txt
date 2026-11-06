@@ -1,0 +1,4 @@
+marker-pdf==2.0.0
+surya-ocr==0.22.1
+torch==2.13.0
+PyMuPDF==1.28.0

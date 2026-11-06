@@ -1,0 +1,5 @@
+-r ../requirements.txt
+reportlab==4.4.9
+pypdf==5.9.0
+pillow==13.0.0
+charset-normalizer==3.5.2

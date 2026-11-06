@@ -1,0 +1,110 @@
+filters:
+  and:
+  - file.inFolder("papers")
+  - note.type == "paper"
+views:
+- type: table
+  name: All papers
+  order:
+  - file.name
+  - title
+  - authors
+  - reading_status
+  - origins
+  - read_next
+  - read_on
+  - zotero_item
+- type: table
+  name: Unread
+  filters:
+    and:
+    - note.reading_status == "unread"
+  order:
+  - file.name
+  - title
+  - reading_status
+  - origins
+  - read_on
+- type: table
+  name: Reading
+  filters:
+    and:
+    - note.reading_status == "reading"
+  order:
+  - file.name
+  - title
+  - reading_status
+  - origins
+  - read_on
+- type: table
+  name: Read
+  filters:
+    and:
+    - note.reading_status == "read"
+  order:
+  - file.name
+  - title
+  - reading_status
+  - origins
+  - read_on
+- type: table
+  name: Unknown
+  filters:
+    and:
+    - note.reading_status == "unknown"
+  order:
+  - file.name
+  - title
+  - reading_status
+  - origins
+  - read_on
+- type: table
+  name: Conflict
+  filters:
+    and:
+    - note.reading_status == "conflict"
+  order:
+  - file.name
+  - title
+  - reading_status
+  - origins
+  - read_on
+- type: table
+  name: Read next
+  filters:
+    and:
+    - note.read_next == true
+  order:
+  - file.name
+  - title
+  - reading_status
+- type: table
+  name: 'Origin: personal'
+  filters:
+    and:
+    - note.origins.contains("personal")
+  order:
+  - file.name
+  - title
+  - origins
+  - reading_status
+- type: table
+  name: 'Origin: recommended'
+  filters:
+    and:
+    - note.origins.contains("recommended")
+  order:
+  - file.name
+  - title
+  - origins
+  - reading_status
+- type: table
+  name: 'Origin: literature-search'
+  filters:
+    and:
+    - note.origins.contains("literature-search")
+  order:
+  - file.name
+  - title
+  - origins
+  - reading_status

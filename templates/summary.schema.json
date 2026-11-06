@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "overview": {
+      "type": "string"
+    },
+    "methods": {
+      "type": "string"
+    },
+    "results": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "source_limits": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": "string",
+            "enum": [
+              "overview",
+              "methods",
+              "results",
+              "limitations"
+            ]
+          },
+          "attachment": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "quote": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "section",
+          "attachment",
+          "page",
+          "quote"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "overview",
+    "methods",
+    "results",
+    "limitations",
+    "source_limits",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "zotero_api": "http://127.0.0.1:23119/api",
+  "collection_keys": [],
+  "include_children": true,
+  "timezone": "UTC",
+  "routes": {},
+  "citekey_overrides": {},
+  "main_attachments": {},
+  "colors": {
+    "Gray": "Context",
+    "Yellow": "Claims, results, supporting evidence",
+    "Blue": "Definitions, theory, models, background",
+    "Green": "Methods, operational definitions, analysis",
+    "Red": "Limitations, contradictions, uncertainty, questions",
+    "Purple": "Ideas, connections, interpretations",
+    "Orange": "Follow-up actions and reading",
+    "Magenta": "Recall and possible flashcards"
+  },
+  "marker": {
+    "enabled": false,
+    "executable": ".marker-venv/bin/marker_single",
+    "timeout_seconds": 3600
+  },
+  "qmd": {
+    "enabled": false,
+    "node": "node",
+    "runtime": ".workflow/qmd-runtime",
+    "timeout_seconds": 1800
+  },
+  "codex": {
+    "enabled": false,
+    "executable": "codex",
+    "model": null,
+    "timeout_seconds": 3600
+  },
+  "scite": {
+    "enabled": false
+  },
+  "scheduler": {
+    "enabled": false,
+    "mode": "convert",
+    "interval_seconds": 3600,
+    "notifications": true
+  }
+}

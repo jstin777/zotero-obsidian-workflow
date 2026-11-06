@@ -1,0 +1,212 @@
+{
+  "collections": [
+    {
+      "key": "DEMO0001",
+      "data": {
+        "name": "Reading Library"
+      }
+    },
+    {
+      "key": "DEMO0002",
+      "data": {
+        "name": "Example Topic",
+        "parentCollection": "DEMO0001"
+      }
+    }
+  ],
+  "items": [
+    {
+      "key": "PAPER001",
+      "data": {
+        "itemType": "journalArticle",
+        "title": "A small experiment in careful reading",
+        "citationKey": "exampleReading2026",
+        "creators": [
+          {
+            "firstName": "Alex",
+            "lastName": "Example",
+            "creatorType": "author"
+          }
+        ],
+        "date": "2026",
+        "DOI": "",
+        "publicationTitle": "Fictional demonstration — not scientific evidence",
+        "collections": [
+          "DEMO0002"
+        ],
+        "tags": [
+          {
+            "tag": "reading/unread"
+          },
+          {
+            "tag": "🌱 origin/personal"
+          }
+        ]
+      }
+    },
+    {
+      "key": "PDF00001",
+      "data": {
+        "itemType": "attachment",
+        "parentItem": "PAPER001",
+        "contentType": "application/pdf",
+        "title": "Original demonstration PDF"
+      }
+    },
+    {
+      "key": "PURPOSE1",
+      "data": {
+        "itemType": "note",
+        "parentItem": "PAPER001",
+        "note": "<p>This fictional document helps me learn the annotation workflow. #method/useful</p>"
+      }
+    },
+    {
+      "key": "ATTNOTE1",
+      "data": {
+        "itemType": "note",
+        "parentItem": "PDF00001",
+        "note": "<p>These notes concern this attachment only.</p>"
+      }
+    },
+    {
+      "key": "PAPER002",
+      "data": {
+        "itemType": "journalArticle",
+        "title": "A second fictional paper without annotations",
+        "citationKey": "exampleUnmarked2026",
+        "collections": [
+          "DEMO0001"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT000",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "note",
+        "annotationColor": "#aaaaaa",
+        "annotationText": "",
+        "annotationComment": "Context for this exercise.",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00000",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": [
+          {
+            "tag": "Knowledge"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ANNOT001",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "highlight",
+        "annotationColor": "#ffd400",
+        "annotationText": "This document is a synthetic example, not a scientific paper.",
+        "annotationComment": "The result is a demonstration only.",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00001",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT002",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "note",
+        "annotationColor": "#2ea8e5",
+        "annotationText": "",
+        "annotationComment": "A definition in my own words.",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00002",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT003",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "highlight",
+        "annotationColor": "#5fb236",
+        "annotationText": "This document is a synthetic example, not a scientific paper.",
+        "annotationComment": "Try this reading method. #method/useful",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00003",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT004",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "note",
+        "annotationColor": "#ff6666",
+        "annotationText": "",
+        "annotationComment": "What would count as better evidence? #question/open",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00004",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT005",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "highlight",
+        "annotationColor": "#a28ae5",
+        "annotationText": "This document is a synthetic example, not a scientific paper.",
+        "annotationComment": "Connect this to a project. #idea/project",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00005",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT006",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "note",
+        "annotationColor": "#f19837",
+        "annotationText": "",
+        "annotationComment": "Read the next section. #read/next",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00006",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    },
+    {
+      "key": "ANNOT007",
+      "data": {
+        "itemType": "annotation",
+        "parentItem": "PDF00001",
+        "annotationType": "highlight",
+        "annotationColor": "#e56eee",
+        "annotationText": "This document is a synthetic example, not a scientific paper.",
+        "annotationComment": "Remember this distinction. #card/candidate",
+        "annotationPageLabel": "1",
+        "annotationSortIndex": "00007",
+        "annotationPosition": "{\"pageIndex\": 0, \"rects\": [[50, 50, 200, 70]]}",
+        "tags": []
+      }
+    }
+  ],
+  "files": {
+    "PDF00001": "examples/demonstration.pdf"
+  }
+}

@@ -1,0 +1,26 @@
+# Personal content and operational authority: back up privately, never publish by accident.
+config.local.json
+.workflow/
+.venv/
+.marker-venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+.trash/
+.obsidian/workspace*.json
+.obsidian/plugins/*/data.json
+/papers/*
+!/papers/.gitkeep
+/zotero-notes/*
+!/zotero-notes/.gitkeep
+/notes/*
+!/notes/.gitkeep
+/sources/*
+!/sources/.gitkeep
+/output/
+/dist/
+/tmp/
+*.log
+.env
+.env.*
